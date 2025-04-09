@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require('./next-i18next.config')
+
 const nextConfig = {
+  i18n,
   reactStrictMode: true,
   // Add security headers for better SSL implementation
   async headers() {
@@ -61,4 +64,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
